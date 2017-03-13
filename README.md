@@ -5,13 +5,13 @@ This project is based on the Smartphone-Based Recognition of Human Activities an
 
 The run_analysis.R script takes the data above, extracts the values for mean and standard variation for a number of measurements, and  computes the average of the means and standard deviations for each particular measurement, so that the final tidy dataset ("tidyfinal") gives the average of each mean and standard deviation for each activity and each subject observed in the study.
 
-A short overview of the script is available in the Codebook <<insert link>>. 
+A short overview of the script is available <a href="https://github.com/jlesar/tidydata-project/blob/master/Codebook.md">in the Codebook </a>.
 
 <h3>Notes on the data</h3> 
 <ul>
 <li>Subjects are divided between test and train datasets, hence no overlap of IDs between the two sets. The first portion of the script uses read.table to convert the txt files to dataframes, then uses cbind and rbind to form a single dataframe.</li>
 
-<li>I have used the measurement labels applied by the original researchers. To spell them out further would make the labels of an unreasonable length, and the existing labels are understandably descriptive. For details on the naming structure for the labels, see the Variables section of the Codebook <<insert link>>  </li>
+<li>I have used the measurement labels applied by the original researchers. To spell them out further would make the labels of an unreasonable length, and the existing labels are understandably descriptive. For details on the naming structure for the labels, see the Variables section of the <a href="https://github.com/jlesar/tidydata-project/blob/master/Codebook.md"> Codebook</a>. </li>
 </ul>
 
 <h2>Tidiness of the data</h2>
