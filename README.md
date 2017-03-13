@@ -1,18 +1,20 @@
 README notes on the tidydata project/tidyfinal dataset
 
-Overview
+<h2>Overview </h2>
 This project is based on the Smartphone-Based Recognition of Human Activities and Postural Transitions Data Set (and ancillary documents) (http://archive.ics.uci.edu/ml/datasets/Smartphone-Based+Recognition+of+Human+Activities+and+Postural+Transitions#) available via the link above. 
 
 The run_analysis.R script takes the data above, extracts the values for mean and standard variation for a number of measurements, and  computes the average of the means and standard deviations for each particular measurement, so that the final tidy dataset ("tidyfinal") gives the average of each mean and standard deviation for each activity and each subject observed in the study.
 
 A short overview of the script is available in the Codebook <<insert link>>. 
 
-Notes on the data 
---Subjects are divided between test and train datasets, hence no overlap of IDs between the two sets. The first portion of the script uses read.table to convert the txt files to dataframes, then uses cbind and rbind to form a single dataframe.
+<h3>Notes on the data</h3> 
+<ul>
+<li>Subjects are divided between test and train datasets, hence no overlap of IDs between the two sets. The first portion of the script uses read.table to convert the txt files to dataframes, then uses cbind and rbind to form a single dataframe.</li>
 
---I have used the measurement labels applied by the original researchers. To spell them out further would make the labels of an unreasonable length, and the existing labels are understandably descriptive. For details on the naming structure for the labels, see the Variables section of the Codebook <<insert link>>
+<li>I have used the measurement labels applied by the original researchers. To spell them out further would make the labels of an unreasonable length, and the existing labels are understandably descriptive. For details on the naming structure for the labels, see the Variables section of the Codebook <<insert link>>  </li>
+</ul>
 
-Tidiness of the data
+<h2>Tidiness of the data</h2>
 As the object of the final dataset (here, "tidyfinal") is to produce "a data set with the average of each variable for each activity and each subject", it makes sense to organize the data by subject, activity, and measurement. That is, each observation (hence, row) is for a subject, activity, and particular type of measurement (e.g., tBodyAcc-X). There are two values for each observation: avemeans and avestddev, or the average of the means and standard deviations of that type of measurement for that subject and activity. The tidy dataset thus has columns for:
 -subject
 -activity
@@ -22,7 +24,7 @@ As the object of the final dataset (here, "tidyfinal") is to produce "a data set
 and one row per observation of each. 
 
 
-Using the script
+<h2>Using the script</h2>
 1. Starting from the downloaded zip file, extract files (unzip("activity.zip", exdir = "activity")). 
 
 2. Run the script in the directory where the files were extracted. 
