@@ -33,6 +33,7 @@ The relevant files for this exercise are:
 --in the "train" subdirectory -- subject_train.txt, X_train.txt, y_test.txt
 
 --The run_analysis.R script handles the following steps:
+
 3. Move the files from the test and train subdirectories into a new subdirectory named "all". Other files may remain as is.
 
 4. Convert the files in "all" to dataframes via read.table, maintaining the distinction between test and train files (retaining filenames is easiest).
