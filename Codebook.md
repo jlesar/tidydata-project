@@ -41,9 +41,9 @@ The raw data was collected by researchers in Italy, who performed some calculati
 
 <li>Unzip the data package; set working directory to the resulting "UCI HAR Dataset" folder.</li>
 
-<li>Run "run_analysis.R" in directory where files have been extracted/downloaded </li>
+<li>Run "run_analysis.R" in directory where files have been extracted/downloaded. </li>
 </ol>
---The accompanying run_analysis.R file handles the steps enumerated in the README.md file to create tidy dataset "tidyfinal", meeting the criteria specified above. -- 
+--The accompanying <a href="https://github.com/jlesar/tidydata-project/blob/master/run_analysis.R">run_analysis.R</a> file handles the steps enumerated in the <a href="https://github.com/jlesar/tidydata-project/blob/master/README.md">README.md</a> file to create tidy dataset "tidyfinal", meeting the criteria specified above. -- 
 
 To open the attached tidyfinal dataset without running the script:<br/>
 data <- read.table("tidyfinal", header = TRUE)
@@ -54,7 +54,7 @@ View(data)
 
 The run_analysis.R script combines the six pertinent text files from the original data package into a dataframe, extracts the variables measuring mean and standard variation, and transforms the data into a narrower set by presenting those variables as a single variable ("measurement"). It then applies labels and takes the average of the means and standard deviations for each measurement, so that the final tidy dataset ("tidyfinal") gives the average of each mean and standard deviation for each activity and each subject.
 
-<<link to the readme document that describes the code in greater detail>>
+The <a href="https://github.com/jlesar/tidydata-project/blob/master/README.md">README.md file</a> describes the code in greater detail.
 
 <h2>About the tidyfinal file</h2>
 
