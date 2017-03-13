@@ -8,12 +8,15 @@
 library(plyr)
 library(dplyr)
 library(tidyr)
+library(stringr)
 
 ##1. Merges the training and the test sets to create one data set. 
 
-        ##place files from test and train directories into same, new directory ("all")
+        ##place files from test and train directories into same, new (or existing)
+        ##directory ("all")
         ##subdirectories not copied as default is recursive = FALSE
-        dir.create("all")
+        if("all"%in%dir()==FALSE) dir.create("all")      
+
         train <- list.files(path = "train", full.names = TRUE)
         test <- list.files(path = "test", full.names = TRUE)
         file.copy(from = train, to = "all")
