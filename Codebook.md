@@ -56,8 +56,8 @@ The run_analysis.R script combines the six pertinent text files from the origina
 About the tidyfinal file
 
 Tidyfinal is a dataframe:
-•Consisting of 5940 observations of 5 variables
-•Representing 30 subjects engaged in 6 different activities and the average mean and average standard deviation of 66 observed measures for each  
+â€¢Consisting of 5940 observations of 5 variables
+â€¢Representing 30 subjects engaged in 6 different activities and the average mean and average standard deviation of 66 observed measures for each  
 
 Variables
 *subject: integer variable identifying the subject that performed the activity; ranges from 1-30. Obtained from subject_test.txt and subject_train.txt.
