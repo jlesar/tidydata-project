@@ -1,36 +1,39 @@
-Codebook
+<h1>Codebook</h1>
 
-Project Description
+<h2>Project Description</h2>
 This project was undertaken for the completion of the Coursera "Getting and Cleaning Data" course. Per the course project assignment, the "purpose of this project is to demonstrate [the] ability to collect, work with, and clean a [specific] data set." The data set in question consisted of a series of text files, elaborated on below, which has been manipulated as explained in the steps below to produce a tidy, R-readable data set consisting of the average means and standard deviations for each of a number of variables, by subject and activity. 
 
-Study design and data processing
+<h2>Study design and data processing</h2>
 
-Collection of the raw data
+<h3>Collection of the raw data</h3>
 
 The raw data was collected by researchers in Italy, who performed some calculations (detailed in their own README file in the data folder linked to below) to arrive at the dataset used for this project. That dataset (as well as the README and other relevant files and contextual information) was and can be obtained from the UCI Machine Learning Repository at http://archive.ics.uci.edu/ml/datasets/Smartphone-Based+Recognition+of+Human+Activities+and+Postural+Transitions 
 
 
-Notes on the original (raw) data
+<h3>Notes on the original (raw) data</h3>
 --The unzipped raw data files are in text (.txt) format, and do not have headers.
 --The downloaded data set unzips to the following set of files:
-activity_labels.txt: matches the numeric values 1-6 with the activity represented (sitting, standing, lying, walking, walking upstairs, walking downstairs)
+<ul>
+<li>activity_labels.txt: matches the numeric values 1-6 with the activity represented (sitting, standing, lying, walking, walking upstairs, walking downstairs)</li>
 
-features.txt: matches the numeric values 1-561 with the 561 "features" (measurement labels) recorded for each action or posture, e.g., "tBodyAcc-mean()-x".
+<li>features.txt: matches the numeric values 1-561 with the 561 "features" (measurement labels) recorded for each action or posture, e.g., "tBodyAcc-mean()-x".</li>
 
-features_info.txt: describes how measurements for the 561 features were obtained/calculated.
+<li>features_info.txt: describes how measurements for the 561 features were obtained/calculated.</li>
 
-README.txt: contains background and contextual information about the experiment, method, variables, and files contained in the dataset package.
+<li>README.txt: contains background and contextual information about the experiment, method, variables, and files contained in the dataset package.</li>
 
-and two subfolders, "test" and "train", each of which contain three files: 
+<li>and two subfolders, "test" and "train", each of which contain three files: 
 
-subject_test (subject_train): "Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30." (From the original data README.txt) 
+<ul>
+<li>subject_test (subject_train): "Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30." (From the original data README.txt) </li>
 
-X_test (X_train): values for each of the 561 features, by time-window observation [X_test: 2947 rows; X_train: 7352 rows]
+<li>X_test (X_train): values for each of the 561 features, by time-window observation [X_test: 2947 rows; X_train: 7352 rows]</li>
 
-y_test (y_train): a list of numbers representing the activity undertaken by the subject for that observation  [y_test: 2947 rows; X_test: 2947 rows]
+<li>y_test (y_train): a list of numbers representing the activity undertaken by the subject for that observation  [y_test: 2947 rows; X_test: 2947 rows]
+</li> </ul>
+</li></ul>
 
-
-Creating the tidy datafile
+<h2>Creating the tidy datafile</h2>
 
 Guide to create the tidy data file
 
